@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "AvenirLTPro-Black";
+  src: url('AvenirLTProBlack/font.woff2') format('woff2'), url('AvenirLTProBlack/font.woff') format('woff');
+}
+@font-face {
+  font-family: "AvenirLTPro-Roman";
+  src: url('AvenirLTProRoman/font.woff2') format('woff2'), url('AvenirLTProRoman/font.woff') format('woff');
+}
+@font-face {
+  font-family: "AvenirLTPro-Light";
+  src: url('AvenirLTProLight/font.woff2') format('woff2'), url('AvenirLTProLight/font.woff') format('woff');
+}
+
