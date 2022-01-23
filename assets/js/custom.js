@@ -17,6 +17,10 @@ $(document).ready(function () {
     $('#quiz-popup').addClass('show');
     $('body').css('overflow-y','hidden');
   });
+  $("header .cart-icon").click(function(){
+    $('#cart-popup').addClass('show');
+    $('body').css('overflow-y','hidden');
+  });
   $(".popup-close,.popup-overlay").click(function(){
     $('.popup-outer').removeClass('show');
     $('body').css('overflow-y','auto');
