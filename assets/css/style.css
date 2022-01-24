@@ -1041,6 +1041,7 @@ footer{
 /*branding sec*/
 .branding-outer{
     padding: 60px 0;
+    text-align: center;
 }
 /*left right sec*/
 .left-right-sec{
