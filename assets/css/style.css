@@ -621,6 +621,7 @@ footer{
     font-family: 'Inter-Light';
     margin: 2px 0 0 0;
     display: inline-block;
+    font-size: 15px;
 }
 .footer-menu li a:hover{
     color: #4e4e50;
@@ -669,6 +670,7 @@ footer{
 .footer-bottom p{
     text-align: center;
     font-family: 'Inter-Light';
+    font-size: 15px;
 }
 .footer-bottom .footer-bootom-menu{
     display: flex;
@@ -679,7 +681,7 @@ footer{
 .footer-bottom .footer-bootom-menu li a{
     color: #727274;
     font-family: 'Inter-Light';
-    font-size: 16px;
+    font-size: 15px;
 }
 .footer-bottom .footer-bootom-menu li a:hover{
     color: #4e4e50;
@@ -1530,8 +1532,8 @@ footer{
     width: 6px;
     position: absolute;
     transform: rotate(45deg);
-    right: 50px;
-    top: 36px;
+    right: 30px;
+    top: 20px;
     cursor: pointer;
     transition: .5s ease-in-out;
 }
@@ -1548,10 +1550,14 @@ footer{
 .popup-close:hover,.popup-close:hover:after{
     background: #ff6161;
 }
+.popup-outer.small .popup-sec{
+    max-width: 400px;
+    padding: 50px 40px 40px;
+}
 .popup-sec{
     max-width: 920px;
     width: calc(100% - 30px);
-    padding: 90px 70px 50px;
+    padding: 50px;
     background: #fff;
     margin: 1.75rem auto;
     position: relative;
@@ -1699,7 +1705,7 @@ footer{
     position: relative;
     z-index: 1;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 .or-text::before {
     content: '';
