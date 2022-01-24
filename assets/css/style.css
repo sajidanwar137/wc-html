@@ -1089,8 +1089,6 @@ footer{
 /*collection sec*/
 .collection-list{
     padding: 60px 0;
-    max-width: 995px;
-    margin: 0 auto;
 }
 .collection-list li{
     background: #ffe6f6;
@@ -1393,7 +1391,6 @@ footer{
     border-radius: 15px;
     border: 1px solid #d4d4d4;
     justify-content: space-between;
-    max-width: 1000px;
     margin: 0 auto 20px;
     flex-wrap: wrap;
 }
@@ -1404,13 +1401,13 @@ footer{
     font-family: 'Inter-Light';
 }
 .ins-left{
-    width: 55%;
+    width: 58%;
 }
 .ins-left p.blue{
     color: #33adfb;
 }
 .ins-right{
-    width: 33%;
+    width: 26%;
 }
 .ins-right p{
     font-size: 16px;
