@@ -347,104 +347,40 @@
         </div>
       </div>
     </footer>
-    <!-- Modal Popup -->
-    <div class="popup-outer" id="quiz-popup">
+    <!-- Login Popup-->
+    <div class="popup-outer show" id="Login">
       <div class="popup-overlay"></div>
       <div class="popup-sec">
         <div class="popup-close"></div>
-        <div class="popup-top hide">
-          <h4>
-            You’re watching a movie when you recieve a mail. You.
-          </h4>
-          <ul class="qus-list">
-            <li>
-              <input type="radio" name="radio" class="custom_radio" id="radio-1"/>
-              <label for="radio-1">Reply Straightaway.</label>
-            </li>
-            <li>
-              <input type="radio" name="radio" class="custom_radio" id="radio-2"/>
-              <label for="radio-2">Wait for your movie to end. Then reply.</label>
-            </li>
-            <li>
-              <input type="radio" name="radio" class="custom_radio" id="radio-3"/>
-              <label for="radio-3">Reply later when you’re at your desk.</label>
-            </li>
-          </ul>
-          <div class="text-center">
-            <button class="button small">Done</button>
-          </div>
-        </div>
-        <!-- next -->
-        <div class="popup-top maxWidth700 text-center">
-          <h3 class="heading text-center">
-            Visionary
-          </h3>
-          <p>
-          <span class="green">Congratulatons!</span> You are a visionary.<br/>
-          A visionary is someone who thining about the future of the whole team as 
-          compared to just your self. You are inspiring, level headed and positive. Shape your company in your image.
-          </p>
-          <div class="buttons">
-            <button class="button">Take me to all personas</button>
-            <div class="">
-              <a href="#" class="take-button">TAKE ME TO ALL THEMES</a>
+        <!-- Login -->
+        <div class="or-text"><strong>Sign In</strong></div>
+        <form class="login-form">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group mb-4">
+                <label>Email <span class="error-star">*</span></label>
+                <input type="text" name="email" class="form-control"/>
+                <p class="error">Please Enter Email</p>
+              </div>
+            </div>  
+            <div class="col-sm-6">
+              <div class="form-group mb-4">
+                <label>Password <span class="error-star">*</span></label>
+                <input type="password" name="password" class="form-control"/>
+                <p class="error">Please Enter Password</p>
+              </div>
+            </div>
+            <div class="col-sm-12 text-right">
+              <button class="green-link">Forgot Password</button>
             </div>
           </div>
+          <div class="btn-outer">
+            <button type="button" class="button border">Cancel</button>
+            <button type="submit" class="button">Sign In</button>
           </div>
-        <!-- bottom sec -->
-        <div class="popup-bottom">
-          <ul class="steps">
-            <li class="green">1</li>
-            <li class="yellow">2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-          </ul>
-          <p class="steps-info">Culture walls were started to make the community interact with each other</p>
-        </div>
-      </div>
-    </div>
-
-     <!-- Modal Popup Cart-->
-     <div class="popup-outer" id="cart-popup">
-      <div class="popup-overlay"></div>
-      <div class="popup-sec">
-        <div class="popup-close"></div>
-        <div class="popup-top">
-          <h3 class="flex-heading">
-            <figure><img src="assets/images/cart-icon.png" alt=""/></figure> My cart
-          </h3>
-          <table class="table">
-            <tr>
-              <th>Culture Wall</th>
-              <th class="text-center">Frames</th>
-              <th class="text-right">Price</th>
-            </tr>
-            <tr>
-              <td><div class="delete-item"></div>Visionary  Wall</td>
-              <td class="text-center">9</td>
-              <td class="text-right">$1999</td>
-            </tr>
-            <tr>
-              <td>30 min consultation - Gaping Void</td>
-              <td class="text-center"></td>
-              <td class="text-right"><span>Complimentary</span></td>
-            </tr>
-            <tr>
-              <td class="last-ch">Subtotal</td>
-              <td class="last-ch text-center"></td>
-              <td class="last-ch text-right">$1999</td>
-            </tr>
-          </table>
-          <div class="text-center">
-            <button class="button">Proceed to checkout</button>
-          </div>
-        </div>
+        </form>
+        <!-- Don't have an account? -->
+        <div class="already-signup"><span>Don't have an account? <button type="button" class="green-link">Sign Up</button></span></div>
       </div>
     </div>
 </body>
