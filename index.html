@@ -46,26 +46,27 @@
                 <li>
                   <a href="#">Contact</a>
                 </li>
-                <li>
-                  <a href="#" class="cart-icon">
-                    <img src="assets/images/header-cart.png" alt=""/>
-                    <div class="cart-val">1</div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="button border small">Sign In</a>
-                </li>
               </ul>
             </nav>
-            <div class="user-profile hide">
-              <div class="user-img">
-                <img src="assets/images/user-icon.png" alt="user icon">
+            <!-- Login Outer -->
+            <div class="login-cart">
+              <!-- Header Cart -->
+              <div class="cart-icon">
+                <div class="cart-val">1</div>
               </div>
-              <p>User Name</p>
-              <ul class="sub-menu">
-                <li><a href="#">Profile</a></li>
-                <li><button class="button small">Log out</button></li>
-              </ul>
+              <!-- Login -->
+              <a href="#" class="button border small login">Sign In</a>
+              <!-- User Profile -->
+              <div class="user-profile hide">
+                <div class="user-img">
+                  <img src="assets/images/user-icon.png" alt="user icon">
+                </div>
+                <p>User Name</p>
+                <ul class="sub-menu">
+                  <li><a href="#">Profile</a></li>
+                  <li><button class="button small">Log out</button></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -372,12 +373,12 @@
     </div>
 
      <!-- Modal Popup Cart-->
-     <div class="popup-outer show" id="cart-popup">
+     <div class="popup-outer" id="cart-popup">
       <div class="popup-overlay"></div>
       <div class="popup-sec">
         <div class="popup-close"></div>
         <div class="popup-top">
-          <h3 class="popup-cart-heading">
+          <h3 class="flex-heading">
             <figure><img src="assets/images/cart-icon.png" alt=""/></figure> My cart
           </h3>
           <table class="table">
