@@ -268,10 +268,6 @@ textarea.form-control{
     resize: none;
     height: 100px;
 }
-.order-text{
-    font-size: 15px;
-    display: block;
-}
 .red-circle{
     width: 10px; 
     height: 10px;
@@ -1887,6 +1883,44 @@ footer{
 .edit-delete li:last-child{
     border-bottom: none;
 }
+.order-list li{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 1px solid #e4e3e8;
+    position: relative;
+    margin-bottom: 15px;
+    box-shadow: 0 0 2px #ceced7;
+}
+.order-list li strong{
+    font-size: 15px;
+    display: block;
+}
+.order-list li .ord-name{
+    display: flex;
+    align-items: center;
+    max-width: 40%;
+}
+.order-list li .ord-name .img{
+    margin-right: 30px;
+}
+.order-list li .ord-name strong{
+    font-family: 'Inter-Medium';
+    font-size: 16px;
+    flex: 1;
+}
+.order-list li .ord-frames{
+    text-align: center;
+}
+.order-list li .ord-price{
+    text-align: center;
+}
+.order-list li .ord-staus{
+    text-align: right;
+}
 @media (max-width: 767px) {
     .manage-a-inner{
         flex-direction: column;
@@ -1902,5 +1936,27 @@ footer{
     .manage-address li strong span {
         margin-left: 0;
         display: block;
+    }
+    .order-list li>div{
+        padding-top: 10px;
+        margin-top: 10px;
+        border-top: 1px solid #e4e3e8;
+        max-width: 100%!important;
+        width: 100%!important;
+        text-align: left!important;
+    }
+    .order-list li .ord-frames,.order-list li .ord-price {
+        text-align: center;
+        max-width: 50%!important;
+        width: 50%!important;
+    }
+    .order-list li .ord-staus{
+        order: -1;
+        padding-top: 0;
+        margin-top: 0;
+        border-top: none;
+    }
+    .order-list li .ord-name strong {
+        font-size: 14px;
     }
 }
