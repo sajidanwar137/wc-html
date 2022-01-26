@@ -105,6 +105,59 @@ img {
     padding: 0 15px;
     margin: 0 auto;
 }
+/*Button Key Frame*/
+@keyframes gelatine {
+    from, to {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+    from, to {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
+  @-webkit-keyframes gelatine {
+    from, to {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+    from, to {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }  
 .button{
     background: #09d62b;
     font-size: 17px;
@@ -139,23 +192,103 @@ img {
     padding: 0px 15px;
     min-width: 70px;
 }
-.button:hover{
-    background:#319d40;
-}
-.button.border:hover{
-    color: #fff;
-    background:#09d62b;
-}
 .button.delete{
     background: #ff6161;
 }
-.button.delete:hover{
-    background: #d45151;
+.button:hover{
+    -webkit-animation: gelatine 0.5s 1;
+    animation: gelatine 0.5s 1;
 }
 .button-outer{
     display: flex;
     justify-content: space-between;
     margin: 50px 0 10px;
+}
+/*close Icon*/
+/*cross button*/
+.closeIcon,.popup-close,.delete-item {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 4px solid #9fa2a9;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    border: 0px solid white;
+    overflow: hidden;
+    -moz-box-shadow: 0px 0px 0px 0px #9fa2a9 inset;
+    -webkit-box-shadow: 0px 0px 0px 0px #9fa2a9 inset;
+    box-shadow: 0px 0px 0px 0px #9fa2a9 inset;
+    -moz-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+    -o-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+    -webkit-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+    transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+}
+.closeIcon:after,.popup-close:after,.delete-item::after {
+    width: 24px;
+    height: 4px;
+    background-color: #9fa2a9;
+    content: "";
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -2px;
+    position: absolute;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -moz-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+    -o-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+    -webkit-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+    transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+}
+.closeIcon::before,.popup-close:before,.delete-item::before {
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -2px;
+    width: 24px;
+    height: 4px;
+    background-color: #9fa2a9;
+    content: "";
+    position: absolute;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -moz-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+    -o-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+    -webkit-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+    transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+}  
+.closeIcon:hover,.popup-close:hover,.delete-item:hover {
+    -moz-box-shadow: 0px 0px 0px 6px #9fa2a9 inset;
+    -webkit-box-shadow: 0px 0px 0px 6px #9fa2a9 inset;
+    box-shadow: 0px 0px 0px 6px #9fa2a9 inset;
+}
+.closeIcon:hover:before,.popup-close:hover:before,.delete-item:hover::before {
+    -moz-transform: scale(0.7) rotate(45deg);
+    -ms-transform: scale(0.7) rotate(45deg);
+    -webkit-transform: scale(0.7) rotate(45deg);
+    transform: scale(0.7) rotate(45deg);
+    -moz-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    -webkit-transition-delay: 100ms;
+    transition-delay: 100ms;
+}
+.closeIcon:hover:after,.popup-close:hover:after,.delete-item:hover:after {
+    -moz-transform: scale(0.7) rotate(-45deg);
+    -ms-transform: scale(0.7) rotate(-45deg);
+    -webkit-transform: scale(0.7) rotate(-45deg);
+    transform: scale(0.7) rotate(-45deg);
+    -moz-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    -webkit-transition-delay: 100ms;
+    transition-delay: 100ms;
 }
 main{
     min-height: 500px;
@@ -1564,28 +1697,9 @@ footer{
     transform: translate(0,0);
 }
 .popup-close{
-    background: #cfcfd3;
-    height: 29px;
-    width: 6px;
     position: absolute;
-    transform: rotate(45deg);
-    right: 30px;
-    top: 20px;
-    cursor: pointer;
-    transition: .5s ease-in-out;
-}
-.popup-close:after{
-    background: #cfcfd3;
-    content: "";
-    height: 6px;
-    left: -11px;
-    position: absolute;
-    top: 11px;
-    width: 29px;
-    transition: .5s ease-in-out;
-}
-.popup-close:hover,.popup-close:hover:after{
-    background: #ff6161;
+    right: 15px;
+    top: 15px;
 }
 .popup-outer.small .popup-sec{
     max-width: 400px;
@@ -1673,10 +1787,6 @@ footer{
     .popup-sec {
         padding: 60px 20px 20px 20px;
     }
-    .popup-close{
-        right: 26px;
-        top: 16px
-    }
     .popup-sec h4{
         margin-bottom: 10px;
         font-size: 22px;
@@ -1712,30 +1822,22 @@ footer{
     border-radius: 5px;
 }
 .delete-item{
-    background: #9fa2a9;
-    height: 29px;
-    width: 6px;
     position: absolute;
-    transform: rotate(45deg) scale(.5);
-    left: -15px;
-    top: 7px;
+    transform: scale(.6);
+    left: -30px;
+    top: 6px;
     cursor: pointer;
-}
-.delete-item:after{
-    background: #9fa2a9;
-    content: "";
-    height: 6px;
-    left: -11px;
-    position: absolute;
-    top: 11px;
-    width: 29px;
-}
-.delete-item:hover,.delete-item:hover:after{
-    background: red;
 }
 @media (max-width: 767px) {
     .table th,.table td{
         font-size: 12px;
+    }
+    .delete-item {
+        position: absolute;
+        transform: scale(.4);
+        left: -26px;
+        top: 2px;
+        cursor: pointer;
     }
 }
 .or-text {
@@ -1766,11 +1868,6 @@ footer{
 }
 .btn-outer .button{
     margin: 5px;
-}
-.btn-outer .button.border:hover{
-    border: 1px solid #000!important;
-    color: #000!important;
-    background: none!important;
 }
 .already-signup span {
     margin-top: 20px;
