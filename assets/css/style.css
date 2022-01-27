@@ -2212,6 +2212,19 @@ footer{
 .payment-sec{
     padding-top: 30px;
 }
+.cc-icon-outer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.cc-icon-outer .cc-icon{
+    display: flex;
+    align-items: center;
+}
+.cc-icon-outer .cc-icon img{
+    margin-right: 10px;
+}
 .cc-info{
     margin-top: 10px;
     background: #e4e3e8;
