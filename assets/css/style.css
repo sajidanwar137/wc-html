@@ -276,10 +276,11 @@ img {
 }  
 .closeIcon:hover,.popup-close:hover,.delete-item:hover {
     -moz-box-shadow: 0px 0px 0px 6px #9fa2a9 inset;
-    -webkit-box-shadow: 0px 0px 0px 6px #9fa2a9 inset;
-    box-shadow: 0px 0px 0px 6px #9fa2a9 inset;
+    -webkit-box-shadow: 0px 0px 0px 6px #ff6161 inset;
+    box-shadow: 0px 0px 0px 6px #ff6161 inset;
 }
 .closeIcon:hover:before,.popup-close:hover:before,.delete-item:hover::before {
+    background: #ff6161;
     -moz-transform: scale(0.7) rotate(45deg);
     -ms-transform: scale(0.7) rotate(45deg);
     -webkit-transform: scale(0.7) rotate(45deg);
@@ -290,6 +291,7 @@ img {
     transition-delay: 100ms;
 }
 .closeIcon:hover:after,.popup-close:hover:after,.delete-item:hover:after {
+    background: #ff6161;
     -moz-transform: scale(0.7) rotate(-45deg);
     -ms-transform: scale(0.7) rotate(-45deg);
     -webkit-transform: scale(0.7) rotate(-45deg);
@@ -328,13 +330,13 @@ input[type="radio"].custom_radio{
 input[type="radio"].custom_radio + label{
     position: relative;
     display: inline-block;
-    padding-left: 45px;
+    padding-left: 35px;
     cursor: pointer;
     font-family: 'Inter-Light';
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 18px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    margin: 0;
 }
 input[type="radio"].custom_radio + label:before,
 input[type="radio"].custom_radio + label:after{
@@ -1740,6 +1742,10 @@ footer{
 .popup-sec .qus-list li{
     padding: 5px 0;
 }
+.popup-sec .qus-list li input[type="radio"].custom_radio + label{
+    font-size: 22px;
+    line-height: 1.3;
+}
 .popup-bottom .steps{
     display: flex;
     overflow: hidden;
@@ -2084,6 +2090,9 @@ footer{
     display: flex;
     flex-wrap: wrap;
 }
+.checkout-sec .head {
+    margin: 0 auto 20px;
+}
 .checkout-sec h3{
     font-size: 31px;
 }
@@ -2146,7 +2155,7 @@ footer{
     color: #000;
 }
 .contact-ship{
-    padding: 14px;
+    padding: 15px;
     border: 1px solid #e4e3e8;
     box-shadow: 0 0 2px #ceced7;
 }
@@ -2170,6 +2179,29 @@ footer{
 }
 .contact-ship li .button{
     margin: 2px 0 0 8px;
+}
+.billing-address{
+    padding-top: 30px;
+}
+.same-diff-ad{
+    padding: 15px;
+    border: 1px solid #e4e3e8;
+    box-shadow: 0 0 2px #ceced7;
+}
+.same-diff-ad li{
+    border-bottom: 1px solid #e4e3e8;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: self-start;
+}
+.same-diff-ad li:last-child{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.payment-sec{
+    padding-top: 30px;
 }
 @media (max-width: 767px) {
     .checkout-sec{
