@@ -2111,6 +2111,9 @@ footer{
 .checkout-left .btn-outer{
     text-align: left;
 }
+.checkout-left .btn-outer .button{
+    margin-left: 0;
+}
 .pay-btn-outer{
     margin: 20px -5px;
     display: flex;
@@ -2165,6 +2168,7 @@ footer{
     margin-bottom: 20px;
     display: flex;
     align-items: self-start;
+    word-break: break-word;
 }
 .contact-ship li:last-child{
     padding: 0;
@@ -2179,6 +2183,7 @@ footer{
 }
 .contact-ship li .button{
     margin: 2px 0 0 8px;
+    white-space: nowrap;
 }
 .billing-address{
     padding-top: 30px;
@@ -2194,14 +2199,23 @@ footer{
     margin-bottom: 12px;
     display: flex;
     align-items: self-start;
+    flex-wrap: wrap;
 }
 .same-diff-ad li:last-child{
     padding: 0;
     margin: 0;
     border: none;
 }
+.same-diff-ad label img{
+    max-height: 28px;
+}
 .payment-sec{
     padding-top: 30px;
+}
+.cc-info{
+    margin-top: 10px;
+    background: #e4e3e8;
+    padding: 20px;
 }
 @media (max-width: 767px) {
     .checkout-sec{
@@ -2217,9 +2231,6 @@ footer{
         border: none;
         margin: 0 0 20px 0;
     }
-    .checkout-left .btn-outer {
-        text-align: center;
-    }
     .payment-list{
         text-align: center;
     }
@@ -2229,6 +2240,9 @@ footer{
     .pay-btn-outer .button {
         margin: 5px 5px;
         min-width: calc(50% - 10px);
+    }
+    .contact-ship span{
+        min-width: 80px;
     }
     .checkout-right {
         width: 100%;
