@@ -2218,6 +2218,9 @@ footer{
     justify-content: space-between;
     width: 100%;
 }
+.cc-icon-outer input[type="radio"].custom_radio + label{
+    flex: 1;
+}
 .cc-icon-outer .cc-icon{
     display: flex;
     align-items: center;
@@ -2256,6 +2259,9 @@ footer{
     }
     .contact-ship span{
         min-width: 80px;
+    }
+    .cc-icon-outer .cc-icon{
+        display: none;
     }
     .checkout-right {
         width: 100%;
