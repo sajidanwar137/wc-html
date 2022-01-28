@@ -90,7 +90,8 @@ p:last-of-type{
     margin-bottom: 0;
 }
 strong{
-    font-family: "Inter-Bold",Arial, Helvetica, sans-serif;
+    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
+    font-weight: normal;
 }
 img {
     max-width: 100%;
@@ -307,11 +308,15 @@ main{
 .head{
     margin: 0 auto 50px;
 }
+.head p strong{
+    font-family: 'Inter-Medium';
+}
 .heading{
     font-size: 48px;
     color: #4e4e50;
     margin-bottom: 20px;
     line-height: 1.1;
+    font-family: 'Inter-Bold';
 }
 .error{
     position: absolute;
@@ -434,6 +439,9 @@ textarea.form-control{
 .mob-show{
     display: none!important;
 }
+.fontSize24{
+    font-size: 24px!important;
+}
 @media (max-width: 767px) {
     html, body {
         font-size: 16px;
@@ -475,6 +483,9 @@ textarea.form-control{
     }
     .green-link {
         font-size: 13px;
+    }
+    .fontSize24{
+        font-size: 18px!important;
     }
 }
 /*Header*/
@@ -2316,5 +2327,72 @@ footer{
     .deeply-box {
         margin: 0 0 30px 0;
         padding: 20px;
+    }
+}
+/*CEO Page*/
+.ceo-sec{
+    max-width: 790px;
+    margin: 0 auto;
+    border: 22px solid #727274;
+    padding: 50px;
+}
+.ceo-sec .ceo-inner{
+    min-height: 325px;
+    max-width: 260px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.ceo-sec h1{
+    font-size: 48px;
+    font-family: 'Inter-Bold';
+    margin: 0;
+}
+.ceo-sec h2{
+    font-size: 24px;
+    font-family: 'Inter-Medium';
+    margin: 0;
+}
+.ceo-sec h3{
+    font-size: 24px;
+    font-family: 'Inter-Medium';
+    margin: 0;
+}
+.ceo-sec h4{
+    font-size: 24px;
+    font-family: 'Inter-Medium';
+    margin: 0;
+}
+.ceo-sec h5{
+    font-size: 18px;
+    font-family: 'Inter-Regular';
+    margin: 0;
+}
+.ceo-sec h6{
+    font-size: 18px;
+    font-family: 'Inter-Light';
+    margin: 0;
+}
+.why-sec{
+    padding: 80px 0 30px;
+}
+.list {
+    padding: 0 0 0 20px;
+}
+.list li{
+    list-style: disc;
+}
+@media (max-width: 767px) {
+    .ceo-sec{
+        border: 12px solid #727274;
+        min-height: 130px;
+        padding: 50px 10px;
+    }
+    .ceo-sec .ceo-inner{
+        min-height: 130px;
+    }
+    .why-sec{
+        padding: 30px 0 10px;
     }
 }
