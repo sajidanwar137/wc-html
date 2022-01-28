@@ -428,9 +428,21 @@ textarea.form-control{
     display: inline-block;
     margin-right: 6px;
 }
+.mob-hide{
+    display: inline-block!important;
+}
+.mob-show{
+    display: none!important;
+}
 @media (max-width: 767px) {
     html, body {
         font-size: 16px;
+    }
+    .mob-hide{
+        display: none!important;
+    }
+    .mob-show{
+        display: inline-block!important;
     }
     .head{
         margin: 0 auto 30px;
@@ -501,7 +513,7 @@ header nav {
 }
 .login-cart .cart-icon{
     position: relative;
-    background: url('../images/header-cart.png') no-repeat center center;
+    background: url('../images/header-cart.svg') no-repeat center center;
     background-size: 100%;
     width: 32px;
     height: 31px;
@@ -813,7 +825,7 @@ footer{
     margin: 0 0 0 auto;
 }
 .footer-social h4{
-    background: url('../images/soacal-bg.png') no-repeat left center;
+    background: url('../images/soacal-bg.svg') no-repeat left center;
     padding-left: 14px;
 }
 .social-menu{
@@ -1258,6 +1270,12 @@ footer{
 .branding-outer{
     padding: 60px 0;
     text-align: center;
+}
+@media (max-width: 767px) {
+    .branding-outer{
+        padding: 20px 0;
+        text-align: center;
+    }
 }
 /*left right sec*/
 .left-right-sec{
