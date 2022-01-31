@@ -2330,7 +2330,7 @@ footer{
     }
 }
 /*CEO Page*/
-.ceo-sec{
+/* .ceo-sec{
     max-width: 790px;
     margin: 0 auto;
     border: 22px solid #727274;
@@ -2343,33 +2343,38 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
+} */
+.editor-text{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
 }
-.ceo-sec h1{
+.editor-text h1{
     font-size: 48px;
     font-family: 'Inter-Bold';
     margin: 0;
 }
-.ceo-sec h2{
+.editor-text h2{
     font-size: 24px;
     font-family: 'Inter-Medium';
     margin: 0;
 }
-.ceo-sec h3{
+.editor-text h3{
     font-size: 24px;
     font-family: 'Inter-Medium';
     margin: 0;
 }
-.ceo-sec h4{
+.editor-text h4{
     font-size: 24px;
     font-family: 'Inter-Medium';
     margin: 0;
 }
-.ceo-sec h5{
+.editor-text h5{
     font-size: 18px;
     font-family: 'Inter-Regular';
     margin: 0;
 }
-.ceo-sec h6{
+.editor-text h6{
     font-size: 18px;
     font-family: 'Inter-Light';
     margin: 0;
@@ -2384,14 +2389,14 @@ footer{
     list-style: disc;
 }
 @media (max-width: 767px) {
-    .ceo-sec{
+    /* .ceo-sec{
         border: 12px solid #727274;
         min-height: 130px;
         padding: 50px 10px;
     }
     .ceo-sec .ceo-inner{
         min-height: 130px;
-    }
+    } */
     .why-sec{
         padding: 30px 0 10px;
     }
