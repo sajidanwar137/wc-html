@@ -413,6 +413,10 @@ label {
     padding-left: 10px;
     font-size: 15px;
 }
+.form-control:focus {
+    border-color: #09d62b;
+    box-shadow: none;
+}
 textarea.form-control{
     resize: none;
     height: 100px;
@@ -784,11 +788,11 @@ header nav {
     }
     .login-cart .user-profile p {
         font-size: 12px;
-        margin: 5px 0 0 0;
         max-width: 65px;
     }
     .login-cart .user-profile{
         min-height: 25px;
+        margin-top: 3px;
     }
 }
 
@@ -2420,4 +2424,59 @@ footer{
     background: rgba(0, 0, 0, 0.85);
     background-position: center center;
     background-repeat: no-repeat;
+}
+/*Contact form*/
+.contact-inner{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    justify-content: space-between;
+}
+.contact-info{
+    width: 48%;
+}
+.info-list{
+    padding-top: 200px;
+}
+.info-list li{
+    display: flex;
+    padding: 20px 0;
+    font-family: 'Inter-Light';
+    line-height: 1.2;
+}
+.info-list figure{
+    margin: 0 50px 0 0;
+}
+.info-list figure img{
+    max-height: 20px;
+}
+.contact-form{
+    width: 48%;
+    border: 1px solid #616163;
+    padding: 35px;
+    border-radius: 25px;
+}
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .contact-inner{
+        padding: 40px 0;
+        flex-direction: column;
+    }
+    .contact-info{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .info-list {
+        padding-top: 0;
+    }
+    .contact-form{
+        width: 100%;
+        padding: 20px;
+    }
+    .info-list figure {
+        margin: 0 15px 0 8px;
+    }
 }
