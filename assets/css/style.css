@@ -866,6 +866,10 @@ footer{
 .social-menu li a:hover{
     background: #09d62b;
 }
+.social-menu li a img{
+    max-height: 19px;
+    max-width: 16px;
+}
 .footer-bottom{
     margin-top: 30px;
     padding-top: 30px;
