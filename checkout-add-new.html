@@ -79,87 +79,89 @@
           <div class="checkout-sec">
             <!-- checkout Left -->
             <div class="checkout-left">
-              <div class="payment-list">
-                <h3>Express checkout</h3>
-                <div class="pay-btn-outer">
-                  <a href="#" class="button blue"><img src="assets/images/shop-pay.png" alt=""/></a>
-                  <a href="#" class="button yellow"><img src="assets/images/paypal.png" alt=""/></a>
-                  <a href="#" class="button black"><img src="assets/images/gpay.png" alt=""/></a>
-                </div>
-              </div>
-              <div class="or-text small"><strong>OR</strong></div>
-              <div class="contact-info">
-                <h3>Contact Information</h3>
+              <ul class="contact-ship mb-4">
+                <li>
+                  <span>Contact</span>
+                  admin@gmail.com
+                  <!-- <button class="button border xsmall">Change</button> -->
+                </li>
+              </ul>
+              <div class="">
+                <h3>Add Address</h3>
                 <form>
-                  <div class="form-group mb-4">
-                    <label>Email or mobile phone number <span class="error-star">*</span></label>
-                    <input type="text" name="name" class="form-control"/>
-                    <p class="error">Please Enter Email or mobile phone number</p>
-                  </div>  
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group mb-4">
+                        <label>Name <span class="error-star">*</span></label>
+                        <input type="text" name="name" class="form-control"/>
+                        <p class="error">Please Enter Name</p>
+                      </div>
+                    </div>  
+                    <div class="col-sm-6">
+                      <div class="form-group mb-4">
+                        <label>Mobile Number <span class="error-star">*</span></label>
+                        <input type="text" name="mobile number" class="form-control"/>
+                        <p class="error">Please Enter Mobile Number</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group mb-4">
+                        <label>Pin Code <span class="error-star">*</span></label>
+                        <input type="text" name="pin code" class="form-control"/>
+                        <p class="error">Please Enter Pin Code</p>
+                      </div>
+                    </div>  
+                    <div class="col-sm-6">
+                      <div class="form-group mb-4">
+                        <label>Locality <span class="error-star">*</span></label>
+                        <input type="text" name="locality" class="form-control"/>
+                        <p class="error">Please Enter Locality</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-group mb-4">
+                        <label>Address </label>
+                        <textarea name="address" class="form-control"></textarea>
+                        <p class="error">Please Enter Address</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group mb-4">
+                        <label>City/District/Town <span class="error-star">*</span></label>
+                        <input type="text" name="city" class="form-control"/>
+                        <p class="error">Please Enter City/District/Town</p>
+                      </div>
+                    </div>  
+                    <div class="col-sm-6">
+                      <div class="form-group mb-4">
+                        <label>State <span class="error-star">*</span></label>
+                        <select class="form-select form-control" aria-label="State">
+                          <option selected>State1</option>
+                          <option value="1">State2</option>
+                          <option value="2">State3</option>
+                          <option value="3">State4</option>
+                        </select>
+                        <p class="error">Please Enter State</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group mb-4">
+                        <label>Landmark </label>
+                        <input type="text" name="landmark" class="form-control"/>
+                      </div>
+                    </div>  
+                    <div class="col-sm-6">
+                      <div class="form-group mb-4">
+                        <label>Alternate Phone </label>
+                        <input type="text" name="alternate phone" class="form-control"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-outer">
+                    <a href="checkout-loged-in-single.html" class="button">Save</a>
+                    <button type="button" class="button border">Cancel</button>
+                  </div>
                 </form>
-              </div>
-              <div class="shipping-info">
-                <h3>Shipping Address</h3>
-              <form>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="form-group mb-4">
-                      <label>Country/region </label>
-                      <select class="form-select form-control" aria-label="Country/region">
-                        <option selected>Country1</option>
-                        <option value="1">Country2</option>
-                        <option value="2">Country3</option>
-                        <option value="3">Country4</option>
-                      </select>
-                      <p class="error">Please Select Country/region</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group mb-4">
-                      <label>First Name <span class="error-star">*</span></label>
-                      <input type="text" name="first name" class="form-control"/>
-                      <p class="error">Please Enter First Name</p>
-                    </div>
-                  </div>  
-                  <div class="col-sm-6">
-                    <div class="form-group mb-4">
-                      <label>Last Name <span class="error-star">*</span></label>
-                      <input type="text" name="last name" class="form-control"/>
-                      <p class="error">Please Enter Last Name</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="form-group mb-4">
-                      <label>Address <span class="error-star">*</span></label>
-                      <textarea name="address" class="form-control"></textarea>
-                      <p class="error">Please Enter Address</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="form-group mb-4">
-                      <label>Apartment, suite, etc</label>
-                      <input type="text" name="apartment" class="form-control"/>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group mb-4">
-                      <label>City <span class="error-star">*</span></label>
-                      <input type="text" name="city" class="form-control"/>
-                      <p class="error">Please Enter City</p>
-                    </div>
-                  </div>  
-                  <div class="col-sm-6">
-                    <div class="form-group mb-4">
-                      <label>Postalcode <span class="error-star">*</span></label>
-                      <input type="text" name="postalcode" class="form-control"/>
-                      <p class="error">Please Enter Postalcode</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="btn-outer">
-                  <button type="submit" class="button">Continue to Shipping</button>
-                </div>
-              </form>
               </div>
             </div>
             <!-- checkout Right -->

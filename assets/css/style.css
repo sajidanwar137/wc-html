@@ -208,6 +208,10 @@ img {
 .button:hover{
     -webkit-animation: gelatine 0.5s 1;
     animation: gelatine 0.5s 1;
+    color: #fff;
+}
+.button.border:hover{
+    color: #a0a0a2;
 }
 .button-outer{
     display: flex;
@@ -319,11 +323,11 @@ main{
     font-family: 'Inter-Bold';
 }
 .error{
-    position: absolute;
+    position: absolute!important;
     color: red!important;
     margin: 2px 0 0 0!important;
-    font-size: 12px;
-    clear: both;
+    font-size: 12px!important;
+    clear: both!important;
     display: block;
 }
 .hide{
@@ -1264,7 +1268,7 @@ footer{
     border-radius: 0px 7px 7px 0;
     transition: all .5s ease-in;
     cursor: pointer;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 100;
 }
 .input-outer .submit:hover{
@@ -2080,12 +2084,16 @@ footer{
 }
 .order-list li .ord-frames{
     text-align: center;
+    flex: 1;
 }
 .order-list li .ord-price{
     text-align: center;
+    flex: 1;
 }
 .order-list li .ord-staus{
     text-align: right;
+    flex: 1;
+    min-width: 30%;
 }
 @media (max-width: 767px) {
     .manage-a-inner{
@@ -2479,4 +2487,29 @@ footer{
     .info-list figure {
         margin: 0 15px 0 8px;
     }
+}
+
+/**/
+.delevery-list li{
+    justify-content: space-between;
+}
+.delevery-list li .edit{
+    display: none;
+    margin-left: 20px;
+}
+.delevery-list li.active .edit{
+    display: block;
+}
+.delevery-list li label{
+    flex: 1;
+}
+.delevery-list li label strong {
+    font-size: 16px;
+    color: #4e4e50;
+    margin-bottom: 10px;
+    display: block;
+}
+.delevery-list li p{
+    font-size: 16px;
+    font-family: "Inter-Regular",Arial, Helvetica, sans-serif;
 }

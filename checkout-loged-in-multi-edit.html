@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CW</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fonts/font.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <a href="#"><img src="assets/images/logo.svg" alt="" /></a>
+        <div class="header-right">
+          <div class="menu-icon">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+          </div>
+          <div class="mob-nav-overlay"></div>
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="#" class="active">Home</a>
+              </li>
+              <li>
+                <a href="#">Themes</a>
+              </li>
+              <li>
+                <a href="collection.html">How it works</a>
+              </li>
+              <li>
+                <a href="#">Culture Science</a>
+              </li>
+              <li>
+                <a href="#">Case Study</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Login Outer -->
+          <div class="login-cart">
+            <!-- Header Cart -->
+            <div class="cart-icon">
+              <div class="cart-val">1</div>
+            </div>
+            <!-- Login -->
+            <a href="#" class="button border small login hide">Sign In</a>
+            <!-- User Profile -->
+            <div class="user-profile">
+              <div class="user-img">
+                <img src="assets/images/user-icon.png" alt="user icon">
+              </div>
+              <p>User Name</p>
+              <ul class="sub-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Reset Password</a></li>
+                <li><button class="button small">Log out</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main>
+    <!-- checkout Sec -->
+    <div class="container">
+      <div class="checkout-sec">
+        <!-- checkout Left -->
+        <div class="checkout-left">
+          <ul class="contact-ship mb-4">
+            <li>
+              <span>Contact</span>
+              admin@gmail.com
+              <!-- <button class="button border xsmall">Change</button> -->
+            </li>
+          </ul>
+          <div class="">
+            <!-- Delivery Sec -->
+            <div class="delivery-sec">
+              <h3 class="mb-3">Delivery Address</h3>
+              <ul class="same-diff-ad delevery-list">
+                <li class="active">
+                  <!-- <input type="radio" name="radio" class="custom_radio" id="radio-1" checked />
+                  <label for="radio-1">
+                    <strong>Jony <span>admin@gmail.com</span></strong>
+                    <p>N‑69, Connaught Place, New Delhi, Delhi, 110001</p>
+                    <div class="">
+                      <button class="button small mt-2">Deliver Here</button>
+                    </div>
+                  </label>
+                  <button class="button border xsmall edit">Edit</button> -->
+                  <!-- Edit address -->
+                  <div class="edit-address">
+                    <h4>Edit Address</h4>
+                    <form>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group mb-4">
+                            <label>Name <span class="error-star">*</span></label>
+                            <input type="text" name="name" class="form-control" />
+                            <p class="error">Please Enter Name</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group mb-4">
+                            <label>Mobile Number <span class="error-star">*</span></label>
+                            <input type="text" name="mobile number" class="form-control" />
+                            <p class="error">Please Enter Mobile Number</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group mb-4">
+                            <label>Pin Code <span class="error-star">*</span></label>
+                            <input type="text" name="pin code" class="form-control" />
+                            <p class="error">Please Enter Pin Code</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group mb-4">
+                            <label>Locality <span class="error-star">*</span></label>
+                            <input type="text" name="locality" class="form-control" />
+                            <p class="error">Please Enter Locality</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group mb-4">
+                            <label>Address </label>
+                            <textarea name="address" class="form-control"></textarea>
+                            <p class="error">Please Enter Address</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group mb-4">
+                            <label>City/District/Town <span class="error-star">*</span></label>
+                            <input type="text" name="city" class="form-control" />
+                            <p class="error">Please Enter City/District/Town</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group mb-4">
+                            <label>State <span class="error-star">*</span></label>
+                            <select class="form-select form-control" aria-label="State">
+                              <option selected>State1</option>
+                              <option value="1">State2</option>
+                              <option value="2">State3</option>
+                              <option value="3">State4</option>
+                            </select>
+                            <p class="error">Please Enter State</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group mb-4">
+                            <label>Landmark </label>
+                            <input type="text" name="landmark" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group mb-4">
+                            <label>Alternate Phone </label>
+                            <input type="text" name="alternate phone" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="btn-outer mt-0">
+                        <button type="submit" class="button">Save</button>
+                        <button type="button" class="button border">Cancel</button>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+                
+                <li>
+                  <input type="radio" name="radio" class="custom_radio" id="radio-2" />
+                  <label for="radio-2">
+                    <strong>Jony <span>admin@gmail.com</span></strong>
+                    <p>N‑69, Connaught Place, New Delhi, Delhi, 110001</p>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="radio" class="custom_radio" id="radio-3" />
+                  <label for="radio-3">
+                    <strong>Jony <span>admin@gmail.com</span></strong>
+                    <p>N‑69, Connaught Place, New Delhi, Delhi, 110001</p>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="radio" class="custom_radio" id="radio-4" />
+                  <label for="radio-4">
+                    <strong>Jony <span>admin@gmail.com</span></strong>
+                    <p>N‑69, Connaught Place, New Delhi, Delhi, 110001</p>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-outer">
+              <button type="submit" class="button">Continue</button>
+              <button type="button" class="button border">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <!-- checkout Right -->
+        <div class="checkout-right">
+          <ul class="order-list">
+            <li>
+              <div class="ord-name">
+                <div class="img"><img src="assets/images/order-icon1.png" alt=""></div>
+                <strong>Product naming </strong>
+              </div>
+              <div class="ord-frames">
+                <strong>Frames</strong>
+                9
+              </div>
+              <div class="ord-price">
+                <strong>Price</strong>
+                $1999
+              </div>
+            </li>
+            <li>
+              <div class="ord-name">
+                <div class="img"><img src="assets/images/order-icon1.png" alt=""></div>
+                <strong>Product naming is the discipline of deciding</strong>
+              </div>
+              <div class="ord-frames">
+                <strong>Frames</strong>
+                6
+              </div>
+              <div class="ord-price">
+                <strong>Price</strong>
+                $1999
+              </div>
+            </li>
+          </ul>
+          <table class="table border-none">
+            <tr>
+              <td>30 min consultation - Gaping Void</td>
+              <td class="text-center"></td>
+              <td class="text-right"><span>Complimentary</span></td>
+            </tr>
+          </table>
+          <div class="input-outer">
+            <input type="text" placeholder="Gift card or discount code" value="" class="subscribe-input">
+            <button type="submit" class="submit">Apply</button>
+          </div>
+          <ul class="subtotal">
+            <li>
+              <div class="text-left">Subtotal</div>
+              <div class="text-right">$1980</div>
+            </li>
+            <li>
+              <div class="text-left">Shipping</div>
+              <div class="text-right">
+                <div class="green">Free</div>
+              </div>
+            </li>
+            <li>
+              <div class="black">Total</div>
+              <div class="black text-right">$1999</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top-inner">
+        <div class="footer-top-left">
+          <div class="footer-logo"><img src="assets/images/logo.svg" alt="" /></div>
+          <p>Culture Walls® are simple and effective tools for scaling and integrating cultural norms. </p>
+        </div>
+        <div class="footer-top-mid">
+          <h4>Menu</h4>
+          <ul class="footer-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Themes</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Culture Science</a></li>
+            <li><a href="#">Case Study</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-top-right">
+          <div class="footer-social">
+            <h4>Social Media</h4>
+            <ul class="social-menu">
+              <li><a href="#"><img src="assets/images/insta-icon.svg" alt="" /></a></li>
+              <li><a href="#"><img src="assets/images/twitter-icon.svg" alt="" /></a></li>
+              <li><a href="#"><img src="assets/images/fb-icon.svg" alt="" /></a></li>
+              <li><a href="#"><img src="assets/images/linkedin-icon.svg" alt="" /></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <ul class="footer-bootom-menu">
+          <li><a href="#">PRIVACY</a></li>
+          <li><a href="#"> TERMS OF SERVICE </a></li>
+          <li><a href="#">SITE MAP</a></li>
+        </ul>
+        <p>© Culture Walls 2022</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Modal Popup Cart-->
+  <div class="popup-outer" id="cart-popup">
+    <div class="popup-overlay"></div>
+    <div class="popup-sec">
+      <div class="popup-close"></div>
+      <div class="popup-top">
+        <h3 class="flex-heading">
+          <figure><img src="assets/images/cart-icon.svg" alt="" /></figure> My cart
+        </h3>
+        <table class="table">
+          <tr>
+            <th>Culture Wall</th>
+            <th class="text-center">Frames</th>
+            <th class="text-right">Price</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="delete-item"></div>Visionary Wall
+            </td>
+            <td class="text-center">9</td>
+            <td class="text-right">$1999</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="delete-item"></div>Visionary Wall
+            </td>
+            <td class="text-center">6</td>
+            <td class="text-right">$1999</td>
+          </tr>
+          <tr>
+            <td>30 min consultation - Gaping Void</td>
+            <td class="text-center"></td>
+            <td class="text-right"><span>Complimentary</span></td>
+          </tr>
+          <tr>
+            <td class="last-ch">Subtotal</td>
+            <td class="last-ch text-center"></td>
+            <td class="last-ch text-right">$1999</td>
+          </tr>
+        </table>
+        <div class="text-center">
+          <button class="button">Proceed to checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
